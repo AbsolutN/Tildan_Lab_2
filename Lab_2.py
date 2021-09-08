@@ -1,4 +1,4 @@
-from arrayQFile import ArrayQ
+from array import array
 
 # Uppgift1
 def experiment():
@@ -27,6 +27,8 @@ def experiment():
 
 #experiment()
 
+
+# Uppgift 2
 def arrayQTest():
     q = ArrayQ()
     q.enqueue(1)
@@ -41,6 +43,7 @@ def arrayQTest():
 #arrayQTest()
 
 
+# Uppgift 3
 def trollkarlstricket(data):
     queue = ArrayQ()
     listan = data.split(",")
@@ -55,9 +58,5 @@ def trollkarlstricket(data):
         # Lägger ut nästa i kön på bordet (printar ut värdet)
         print(queue.dequeue())
 
-
-
-if __name__ == '__main__':
-    trollkarlstricket("7,1,12,2,8,3,11,4,9,5,13,6,10")
 
 
