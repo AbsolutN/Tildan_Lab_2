@@ -11,19 +11,24 @@ def experiment():
 
     my_array.append(12)
     my_array.append(13)
+    # Lägger till i slutet av arrayen
     print(my_array)
 
     my_array.insert(0, 112)
+    # Lägger till i början av arrayen
     my_array.append(12)
     my_array.append(12)
     my_array.append(12)
     my_array.append(100)
+    # Lägger till i slutet av arrayen
     print(my_array)
 
     my_array.remove(12)
+    # Tar bort första värdet som är 12 i arrayen (i detta fall index 1)
     print(my_array)
 
     my_array.pop(-1)
+    # Tar bort det sista värdet i arrayen
     print(my_array)
 
 # experiment()
@@ -45,6 +50,7 @@ def arrayQTest():
 
 def trollkarlstricket(data):
     queue = ArrayQ()
+    # Skapar en ny array queue
     listan = data.split(",")
 
     # Lägger till alla värden i kön
