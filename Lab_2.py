@@ -5,35 +5,32 @@ from arrayQFile import ArrayQ
 from linkedQFile import LinkedQ
 
 
-# Uppgift1
+""" Uppgift1"""
 def experiment():
     my_array = array('i')
 
     my_array.append(12)
     my_array.append(13)
-    # Lägger till i slutet av arrayen
     print(my_array)
 
     my_array.insert(0, 112)
-    # Lägger till i början av arrayen
     my_array.append(12)
     my_array.append(12)
     my_array.append(12)
     my_array.append(100)
-    # Lägger till i slutet av arrayen
     print(my_array)
 
     my_array.remove(12)
-    # Tar bort första värdet som är 12 i arrayen (i detta fall index 1)
     print(my_array)
 
     my_array.pop(-1)
-    # Tar bort det sista värdet i arrayen
     print(my_array)
 
 # experiment()
 
 
+
+""" Uppgift 2 """
 def arrayQTest():
     q = ArrayQ()
     q.enqueue(1)
@@ -48,9 +45,10 @@ def arrayQTest():
 # arrayQTest()
 
 
+
+""" Uppgift 3 """
 def trollkarlstricket(data):
     queue = ArrayQ()
-    # Skapar en ny array queue
     listan = data.split(",")
 
     # Lägger till alla värden i kön
@@ -68,6 +66,8 @@ if __name__ == '__main__':
     trollkarlstricket("7,1,12,2,8,3,11,4,9,5,13,6,10")
 
 
+    
+""" Uppgift 6 """
 class TestQueue(unittest.TestCase):
 
     def test_isEmpty(self):
